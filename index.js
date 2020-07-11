@@ -11,7 +11,7 @@ const create = (name, options) => {
   let scopeNameArg;
   let packageNamesArg;
 
-  if (argv._.length >= 2) {
+  if (argv._[1]) {
     scopeNameArg = argv._[0];
     packageNamesArg = argv._[1];
   } else {
