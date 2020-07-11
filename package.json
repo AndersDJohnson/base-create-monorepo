@@ -1,0 +1,22 @@
+{
+  "name": "base-create-monorepo",
+  "version": "1.2.0",
+  "description": "Utility for npm init create-* scripts for monorepos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "AndersDJohnson/base-create-monorepo",
+  "funding": "https://github.com/sponsors/AndersDJohnson",
+  "keywords": [],
+  "author": "Anders D. Johnson",
+  "license": "ISC",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "base-create": "^1.3.1",
+    "mkdirp": "^1.0.4",
+    "yargs": "^15.4.1"
+  }
+}
