@@ -34,7 +34,6 @@ and `eachPackage` defines options to apply to all sub-packages:
 const createMonorepo = require("base-create-monorepo");
 
 createMonorepo("babel-typescript-monorepo", {
-  devDependencies: ["lerna"],
   package: {
     scripts: {
       start: "lerna run start",
