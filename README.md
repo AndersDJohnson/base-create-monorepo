@@ -4,7 +4,7 @@
 
 Based on [`base-create`](https://npm.im/base-create) but for monorepos.
 
-If you want different options for different sub-packages, use `base-create` directly.
+Note: If you want different options for different sub-packages, use `base-create` directly.
 
 With an initializer package `create-custom-babel-monorepo` to create a monorepo project `my-app` with two nested packages `one` and `two`,
 pass a comma-delimited list of package names to the command after the project name:
