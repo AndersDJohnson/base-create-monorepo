@@ -39,6 +39,7 @@ const create = (name, options) => {
     devDependencies: ["lerna", ...(options.devDependencies || [])],
     package: {
       ...(options.package || []),
+      private: true,
       workspaces: ["packages/*"],
     },
     packages,
