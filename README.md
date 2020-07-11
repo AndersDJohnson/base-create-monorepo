@@ -10,18 +10,18 @@ Based on [`base-create`](https://npm.im/base-create) but for monorepos.
 
 Note: If you want different options for different sub-packages, use `base-create` directly.
 
-With an initializer package `create-custom-babel-monorepo` to create a monorepo project `my-app` with two nested packages `one` and `two`,
+With an initializer package `create-custom-babel-monorepo` to create a monorepo project `my-app` with two nested packages `my-first-package` and `my-second-package`,
 pass a comma-delimited list of package names to the command after the project name:
 
 ```
-$ npm init custom-babel-monorepo my-app one,two
+$ npm init custom-babel-monorepo my-app my-first-package,my-second-package
 ```
 
-Or if you wanted an npm scope `@my-org` on your package names (`@my-org/my-app`, `@my-org/one`, and `@my-org/two`),
+Or if you wanted an npm scope `@my-org` on your package names (`@my-org/my-app`, `@my-org/my-first-package`, and `@my-org/my-second-package`),
 pass the org as an argument after the project name but before the package names:
 
 ```
-$ npm init custom-babel-monorepo my-app @my-org one,two
+$ npm init custom-babel-monorepo my-app @my-org my-first-package,my-second-package
 ```
 
 Here is example source of such an initializer.
