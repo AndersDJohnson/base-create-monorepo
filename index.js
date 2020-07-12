@@ -40,6 +40,7 @@ const create = (options) => {
     package: {
       ...(options.package || []),
       private: true,
+      main: undefined,
       workspaces: ["packages/*"],
     },
     packages,
