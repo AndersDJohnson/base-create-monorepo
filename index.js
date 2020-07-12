@@ -29,6 +29,7 @@ const create = (options) => {
   const packages = packageNames.map((packageName) => ({
     ...eachPackage,
     name: packageName,
+    skipGitignore: true,
   }));
 
   const createOptions = {
