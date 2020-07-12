@@ -15,7 +15,7 @@
     "index.js"
   ],
   "dependencies": {
-    "base-create": "^2.0.0",
+    "base-create": "^2.0.2",
     "mkdirp": "^1.0.4",
     "yargs": "^15.4.1"
   }
