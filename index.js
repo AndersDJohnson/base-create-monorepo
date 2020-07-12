@@ -8,11 +8,11 @@ const create = (options) => {
 
   const { argv } = yargs;
 
-  let scopeNameArg;
+  let scope;
   let packageNamesArg;
 
   if (argv._[2]) {
-    scopeNameArg = argv._[1];
+    scope = argv._[1];
     packageNamesArg = argv._[2];
   } else {
     packageNamesArg = argv._[1];
@@ -29,14 +29,13 @@ const create = (options) => {
   const packages = packageNames.map((packageName) => ({
     ...eachPackage,
     name: packageName,
+    scope,
     skipGitignore: true,
   }));
 
   const createOptions = {
-    config: {
-      scope: scopeNameArg,
-    },
     ...restOptions,
+    scope,
     devDependencies: ["lerna", ...(options.devDependencies || [])],
     package: {
       ...(options.package || []),
