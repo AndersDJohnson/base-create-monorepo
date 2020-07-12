@@ -3,7 +3,7 @@
 const yargs = require("yargs");
 const baseCreate = require("base-create");
 
-const create = (name, options) => {
+const create = (options) => {
   const { eachPackage, ...restOptions } = options;
 
   const { argv } = yargs;
@@ -50,7 +50,7 @@ const create = (name, options) => {
     ],
   };
 
-  return baseCreate(name, createOptions);
+  return baseCreate(createOptions);
 };
 
 exports.default = create;
