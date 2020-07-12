@@ -1,6 +1,6 @@
 {
   "name": "base-create-monorepo",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Utility for npm init create-* scripts for monorepos.",
   "main": "index.js",
   "scripts": {
