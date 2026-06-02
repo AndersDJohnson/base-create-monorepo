@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "base-create": "^3.0.1",
-    "mkdirp": "^1.0.4",
+    "mkdirp": "^3.0.1",
     "yargs": "^15.4.1"
   }
 }
